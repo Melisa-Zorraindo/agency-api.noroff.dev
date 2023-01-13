@@ -4,7 +4,6 @@ import { databasePrisma } from "../../prismaClient.js";
 export const applicationsRouter = express.Router();
 
 
-// Put application router :
 
 
 applicationsRouter.put('/', async (req, res) => {

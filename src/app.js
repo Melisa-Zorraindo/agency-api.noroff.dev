@@ -17,6 +17,7 @@ app.use(
   })
 );
 
+
 app.use("/users", usersRouter);
 app.use("/applications", applicationsRouter);
 app.use("/listings", listingsRouter);
