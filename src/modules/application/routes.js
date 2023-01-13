@@ -5,7 +5,6 @@ export const applicationsRouter = express.Router();
 
 
 
-
 applicationsRouter.put('/', async (req, res) => {
   try {
     const { applicantId, listingId, coverLetter } = req.body;
