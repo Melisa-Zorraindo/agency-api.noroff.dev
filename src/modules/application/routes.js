@@ -5,10 +5,10 @@ export const applicationsRouter = express.Router();
 
 
 
-applicationsRouter.put('/', async (req, res) => {
+applicationsRouter.put('/:id', async (req, res) => {
   try {
     const { applicantId, listingId, coverLetter } = req.body;
-    const newApplication = await databasePrisma.application.create({
+    const newApplication = await databasePrisma.application.update({
       data: {
         applicantId,
         user: {
