@@ -8,8 +8,8 @@ import bodyParser from "body-parser";
 dotenv.config();
 
 const app = express();
-/* const PORT = process.env.PORT; */
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
+
 
 app.use(
   bodyParser.json({
